@@ -1,0 +1,14 @@
+schema:
+  database: warehouse
+  tables:
+    - name: products
+      fields:
+        - id: int
+        - name: string
+        - stock: int
+    - name: orders
+      fields:
+        - id: int
+        - product_id: int
+        - quantity: int
+        - date: date 

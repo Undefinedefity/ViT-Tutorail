@@ -1,0 +1,4 @@
+ui:
+  windows:
+    create_db: false
+    view: true 

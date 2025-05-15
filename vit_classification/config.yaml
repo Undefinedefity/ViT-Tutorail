@@ -1,0 +1,8 @@
+defaults:
+  - data: cifar10 # 数据集配置
+  - model: vit # 模型配置
+  - train: training # 训练配置
+
+# 通用配置
+seed: 42
+output_dir: ./outputs

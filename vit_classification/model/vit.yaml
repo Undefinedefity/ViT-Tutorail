@@ -1,0 +1,5 @@
+# ViT 模型配置，使用 HuggingFace Transformers
+model:
+  name: google/vit-base-patch16-224
+  num_labels: 10 # 分类标签数
+  dropout: 0.1 # 随机失活率

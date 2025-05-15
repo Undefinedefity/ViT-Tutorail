@@ -1,0 +1,7 @@
+# 训练配置
+train:
+  epochs: 10 # 训练轮数
+  lr: 3e-4 # 学习率
+  weight_decay: 0.01 # 权重衰减
+  device: cuda # 设备, 使用GPU训练
+  log_steps: 100 # 日志记录间隔, 每100步记录一次

@@ -1,0 +1,5 @@
+node:                         # Config is hierarchical
+  loompa: 10                  # Simple value
+  zippity: ${node.loompa}     # Value interpolation, 使用node.loompa的值
+  do: "oompa ${node.loompa}"  # String interpolation, 使用node.loompa的值
+  waldo: ???                  # Missing value, must be populated prior to access, 未定义的值，必须在访问之前填充

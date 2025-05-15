@@ -1,0 +1,13 @@
+schema:
+  database: support
+  tables:
+    - name: tickets
+      fields:
+        - id: int
+        - status: string
+        - priority: int
+    - name: users
+      fields:
+        - name: string
+        - email: string
+        - role: string 

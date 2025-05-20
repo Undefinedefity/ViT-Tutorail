@@ -1,8 +1,19 @@
 defaults:
-  - data: cifar10 # 数据集配置
+  - _self_  # 添加 _self_ 以修复 Hydra 警告
+  - data: imagenet # 数据集配置
   - model: vit # 模型配置
   - train: training # 训练配置
 
 # 通用配置
 seed: 42
 output_dir: ./outputs
+data:
+  root: ./data  # 添加数据根目录配置
+  batch_size: 32  # 批量大小，ImageNet 数据集较大，减小批量大小
+  num_workers: 4  # 数据加载时使用的进程数
+
+# 模型配置
+model:
+  name: google/vit-base-patch16-224  # 预训练模型名称
+  num_labels: 1000  # ImageNet 有1000个类别
+  dropout: 0.1  # 随机失活率

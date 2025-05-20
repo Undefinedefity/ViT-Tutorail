@@ -1,0 +1,7 @@
+# ImageNet 数据集配置
+data:
+  name: ImageNet
+  train_dir: train  # 训练集目录
+  val_dir: val      # 验证集目录
+  # ImageNet 类别映射文件
+  class_to_idx_file: imagenet_class_index.json 
